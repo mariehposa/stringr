@@ -6,32 +6,28 @@ export default function Navigation() {
   return (
     <div>
         <div>
-            <img src={stringr} alt="stringr" />
+            <a exact to="/"></a><img src={stringr} alt="stringr" /><a/>
         </div>
         <div>
-            <a onClick={() => navigate("header")} exact to="/">
+            <a onClick={() => navigate("what_is_stringr")} to="/what_is_stringr">
                 what is stringr
             </a>
-            <a onClick={() => navigate("about")} to="/about">
+            <a onClick={() => navigate("how_it_works")} to="how_it_works">
                 How it works
             </a>
-            <a onClick={() => navigate("skills")} to="/skills">
+            <a onClick={() => navigate("Learn_more")} to="/Learn_more">
                 Learn more
             </a>
-            <a onClick={() => navigate("portfolio")} to="/portfolio">
+            <a onClick={() => navigate("about_us")} to="/about_us">
                 About us
             </a>
-            <a onClick={() => navigate("contact")} to="/contact">
+            <a onClick={() => navigate("faq")} to="/faq">
                 Faq
             </a>
         </div>
         <div>
-            <a>
-                Videographers
-            </a>
-            <a>
-                Login
-            </a>
+            <a> Videographers </a>
+            <a> Login </a>
         </div>
     </div>
   );
