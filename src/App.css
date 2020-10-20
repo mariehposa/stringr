@@ -3,3 +3,7 @@
   height: 100vh;
   margin-top: 3px;
 }
+
+video {
+  height: auto !important;
+}

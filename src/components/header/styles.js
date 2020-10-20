@@ -23,9 +23,7 @@ export const StyledH = styled.h1`
 export const StyledP = styled.p`
     text-align: center;
     color: #fff;
-    /* text-shadow: 0px 1px 2px rgba(0,0,0,.6); */
     font-weight: 300;
-    /* padding: 20px 0; */
     line-height: 1.4;
     font-size: 1.8rem;
     width: 55%;

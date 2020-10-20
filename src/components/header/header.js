@@ -17,9 +17,12 @@ export default function Header() {
             </StyledDiv>
             <ReactPlayer
                 className='react-player'
-                url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+                url='https://static.stringr.com/media/heros/hero-19v2.1.mp4'
                 width="100%"
-                height="90vh"
+                height="100vh"
+                muted='true'
+                playing="true"
+                loop="true"
             />
         </div>
     )
