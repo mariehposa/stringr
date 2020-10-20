@@ -2,6 +2,13 @@ import React from "react";
 import stringr from '../img/stringr.svg';
 
 export default function Navigation() {
+    function navigate(elementId) {
+        let offsetTop = document.getElementById(elementId).offsetTop;
+        window.scrollTo({
+          top: offsetTop - 100,
+          behavior: "smooth"
+        });
+    }
   
   return (
     <div>
