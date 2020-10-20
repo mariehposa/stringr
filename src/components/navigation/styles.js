@@ -15,6 +15,7 @@ export const StyledLink = styled(NavLink)`
   margin: auto 0;
   margin-left: 1.6rem;
   color: white;
+  text-transform: uppercase
 
   &:hover {
     color: #e31b6d;

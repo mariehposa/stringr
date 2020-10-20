@@ -1,5 +1,6 @@
 import React from "react";
 import stringr from '../img/stringr.svg';
+import {StyledNav, StyledLink} from './styles';
 
 export default function Navigation() {
     function navigate(elementId) {
@@ -11,31 +12,31 @@ export default function Navigation() {
     }
   
   return (
-    <div>
+    <StyledNav>
         <div>
             <a exact to="/"><img src={stringr} alt="stringr" /></a>
         </div>
         <div>
-            <a onClick={() => navigate("what_is_stringr")} to="/what_is_stringr">
+            <StyledLink onClick={() => navigate("what_is_stringr")} to="/what_is_stringr">
                 what is stringr
-            </a>
-            <a onClick={() => navigate("how_it_works")} to="how_it_works">
+            </StyledLink>
+            <StyledLink onClick={() => navigate("how_it_works")} to="how_it_works">
                 How it works
-            </a>
-            <a onClick={() => navigate("Learn_more")} to="/Learn_more">
+            </StyledLink>
+            <StyledLink onClick={() => navigate("Learn_more")} to="/Learn_more">
                 Learn more
-            </a>
-            <a onClick={() => navigate("about_us")} to="/about_us">
+            </StyledLink>
+            <StyledLink onClick={() => navigate("about_us")} to="/about_us">
                 About us
-            </a>
-            <a onClick={() => navigate("faq")} to="/faq">
+            </StyledLink>
+            <StyledLink onClick={() => navigate("faq")} to="/faq">
                 Faq
-            </a>
+            </StyledLink>
         </div>
         <div>
-            <a> Videographers </a>
-            <a> Login </a>
+            <StyledLink> Videographers </StyledLink>
+            <StyledLink> Login </StyledLink>
         </div>
-    </div>
+    </StyledNav>
   );
 }
