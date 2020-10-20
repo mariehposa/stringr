@@ -34,8 +34,8 @@ export default function Navigation() {
             </StyledLink>
         </div>
         <div>
-            <StyledLink> Videographers </StyledLink>
-            <StyledLink> Login </StyledLink>
+            <StyledLink to="/videographers"> Videographers </StyledLink>
+            <StyledLink to="/login"> Login </StyledLink>
         </div>
     </StyledNav>
   );
