@@ -13,7 +13,7 @@ export default function Navigation() {
   return (
     <div>
         <div>
-            <a exact to="/"></a><img src={stringr} alt="stringr" /><a/>
+            <a exact to="/"><img src={stringr} alt="stringr" /></a>
         </div>
         <div>
             <a onClick={() => navigate("what_is_stringr")} to="/what_is_stringr">
