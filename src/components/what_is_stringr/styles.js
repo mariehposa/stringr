@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const StyledAll = styled.div`
     display: flex;
     justify-content: space-evenly;
-    margin: 100px 0;
+    margin: 200px 0;
 `;
 
 export const StyledDiv = styled.div`
