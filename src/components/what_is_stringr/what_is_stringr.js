@@ -17,6 +17,7 @@ export default function WhatIsStringr() {
         </StyledP>
         <StyledP>Read about how customers use Stringr <StyledNav to="https://static.stringr.com/Stringr+Whitepaper+March+2019+NCN.pdf">here</StyledNav>.</StyledP>
       </StyledDiv>
+      
       <div>
           <StyledImg src={customers} alt="stringr customers" />
       </div>
