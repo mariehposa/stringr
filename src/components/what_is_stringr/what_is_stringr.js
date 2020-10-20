@@ -1,11 +1,11 @@
 import React from "react";
 import customers from '../img/customers.png';
-import {StyledAll, StyledH, StyledP, StyledSpan} from './styles';
+import {StyledAll, StyledH, StyledP, StyledDiv, StyledImg, StyledNav} from './styles';
 
 export default function WhatIsStringr() {
   return (
     <StyledAll>
-      <div>
+      <StyledDiv>
         <StyledH>What is stringr</StyledH>
         <StyledP>
           Stringr is a video platform that allows customers to source, edit,
@@ -15,10 +15,10 @@ export default function WhatIsStringr() {
           a full suite of video capabilities that take you from concept, to
           creation to making money.
         </StyledP>
-        <StyledP>Read about how customers use Stringr <StyledSpan>here</StyledSpan>.</StyledP>
-      </div>
+        <StyledP>Read about how customers use Stringr <StyledNav to="https://static.stringr.com/Stringr+Whitepaper+March+2019+NCN.pdf">here</StyledNav>.</StyledP>
+      </StyledDiv>
       <div>
-          <img src={customers} alt="stringr customers" />
+          <StyledImg src={customers} alt="stringr customers" />
       </div>
     </StyledAll>
   );
