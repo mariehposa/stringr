@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 
 export const StyledDiv = styled.div`
     position: absolute;
@@ -7,7 +6,6 @@ export const StyledDiv = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: wheat;
     top: 40%;
     bottom: 1%;
 `;
@@ -31,10 +29,6 @@ export const StyledP = styled.p`
     line-height: 50px;
 `;
 
-export const StyledNav = styled(NavLink)`
-    
-`;
-
 export const StyledButton = styled.button`
     background: #cd0c0c;
     color: #fff;
@@ -47,8 +41,8 @@ export const StyledButton = styled.button`
     border-radius: 3px;
 
     &:hover {
-        color: #ef4a34;
-        transition: color .3s ease;
+        background-color: #ef4a34;
+        transition: background-color .3s ease;
     }
 `;
 

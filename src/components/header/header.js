@@ -2,7 +2,8 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import '../../App.css';
 import downArrow from '../img/down-arrow.svg';
-import {StyledDiv, StyledNav, StyledH, StyledP, StyledButton, StyledImg} from './styles';
+import { NavLink } from "react-router-dom";
+import {StyledDiv, StyledH, StyledP, StyledButton, StyledImg} from './styles';
 
 export default function Header() {
     return (
@@ -11,9 +12,9 @@ export default function Header() {
                 <StyledH>Video of anything. anywhere.</StyledH>
                 <StyledP> Stringr has a network of over 125,000 videographers to get you the footage you want, when you need it.</StyledP>
                 <StyledButton>Learn more</StyledButton>
-                <StyledNav to="/what_is_stringr">
+                <NavLink to="/what_is_stringr">
                     <StyledImg src={downArrow} alt="what is stringr" />
-                </StyledNav>
+                </NavLink>
             </StyledDiv>
             <ReactPlayer
                 className='react-player'
