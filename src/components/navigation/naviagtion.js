@@ -19,7 +19,7 @@ export default function Navigation() {
         <StyledDiv>
             <div>
                 <StyledLink1 onClick={() => navigate("what_is_stringr")} to="/what_is_stringr">
-                    what is stringr
+                    what is stringr?
                 </StyledLink1>
                 <StyledLink1 onClick={() => navigate("how_it_works")} to="how_it_works">
                     How it works
