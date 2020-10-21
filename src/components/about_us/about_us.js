@@ -1,5 +1,11 @@
 import React from "react";
-import { StyledDiv, StyledH, StyledImg } from "../what_is_stringr/styles";
+import bc from '../img/bc.png';
+import drum from '../img/drum.png';
+import hub from '../img/hub.png';
+import journal from '../img/journal.png';
+import forbes from '../img/forbes.png';
+import { StyledH, StyledP } from "../what_is_stringr/styles";
+import {  } from "./styles";
 
 export default function AboutUs() {
   return (
@@ -7,11 +13,11 @@ export default function AboutUs() {
       <StyledDiv>
           <StyledH>In the press</StyledH>
           <div>
-              <StyledImg src={} alt="" />
-              <StyledImg src={} alt="" />
-              <StyledImg src={} alt="" />
-              <StyledImg src={} alt="" />
-              <StyledImg src={} alt="" />
+              <StyledImg src={bc} alt="Bc" />
+              <StyledImg src={drum} alt="The Drum" />
+              <StyledImg src={hub} alt="Production Hub" />
+              <StyledImg src={journal} alt="Business journal" />
+              <StyledImg src={forbes} alt="Forbes" />
           </div>
       </StyledDiv>
 
