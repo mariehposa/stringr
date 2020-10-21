@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const StyledAll = styled.div`
     display: flex;
-    margin: 80px 150px;
+    margin: 100px 150px;
     border-top: 1px solid #ccc;
     padding-top: 50px;
     justify-content: space-between;
