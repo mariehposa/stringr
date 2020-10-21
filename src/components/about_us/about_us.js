@@ -9,7 +9,7 @@ import { StyledDiv, StyledAll, StyledImg, StyledH3, StyledDiv2 } from "./styles"
 
 export default function AboutUs() {
   return (
-    <StyledAll>
+    <StyledAll id={"about_us"}>
       <StyledDiv>
           <StyledH>In the press</StyledH>
           <div>

@@ -4,7 +4,7 @@ import {StyledAll, StyledH, StyledP, StyledDiv, StyledImg, StyledNav} from './st
 
 export default function WhatIsStringr() {
   return (
-    <StyledAll>
+    <StyledAll id={"what_is_stringr"}>
       <StyledDiv>
         <StyledH>What is stringr</StyledH>
         <StyledP>

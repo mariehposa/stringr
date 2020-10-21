@@ -1,9 +1,10 @@
 import React from 'react';
-import { StyledAll, StyledDiv } from '../what_is_stringr/styles';
+import { StyledAll, StyledDiv, StyledNav, StyledP, InnerDiv } from './styles';
+import { Route } from "react-router-dom";
 
 export default function Faq() {
     return (
-        <StyledAll>
+        <StyledAll id={"faq"}>
             <StyledDiv>
                 <StyledNav to="/">What is Stringr?</StyledNav>
                 <StyledNav to="/payment_time">I uploaded video to the Stringr platform. When will I get paid? </StyledNav>

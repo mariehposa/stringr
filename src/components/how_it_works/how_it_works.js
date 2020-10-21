@@ -15,7 +15,7 @@ export default function HowItWorks() {
     ]
 
     return (
-        <StyledOverall>
+        <StyledOverall id={"how_it_works"}>
             <StyledH1>How it works</StyledH1>
             <StyledAll>
                 {
