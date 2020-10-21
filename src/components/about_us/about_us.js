@@ -4,8 +4,8 @@ import drum from '../img/drum.png';
 import hub from '../img/hub.png';
 import journal from '../img/journal.png';
 import forbes from '../img/forbes.png';
-import { StyledAll, StyledH, StyledP } from "../what_is_stringr/styles";
-import { StyledDiv, StyledImg, StyledH3 } from "./styles";
+import { StyledH, StyledP } from "../what_is_stringr/styles";
+import { StyledDiv, StyledAll, StyledImg, StyledH3, StyledDiv2 } from "./styles";
 
 export default function AboutUs() {
   return (
@@ -21,7 +21,7 @@ export default function AboutUs() {
           </div>
       </StyledDiv>
 
-      <StyledDiv>
+      <StyledDiv2>
         <StyledH>About us</StyledH>
         <StyledP>
           Stringr was started by two friends – one a former news producer and
@@ -39,7 +39,7 @@ export default function AboutUs() {
             <StyledH3>Offices in: New York, London, Los Angeles</StyledH3>
             <StyledH3>Videographers: Everywhere</StyledH3>
         </div>
-      </StyledDiv>
+      </StyledDiv2>
     </StyledAll>
   );
 }
