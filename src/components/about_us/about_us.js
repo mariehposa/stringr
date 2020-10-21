@@ -4,8 +4,8 @@ import drum from '../img/drum.png';
 import hub from '../img/hub.png';
 import journal from '../img/journal.png';
 import forbes from '../img/forbes.png';
-import { StyledH, StyledP } from "../what_is_stringr/styles";
-import {  } from "./styles";
+import { StyledAll, StyledH, StyledP } from "../what_is_stringr/styles";
+import { StyledDiv, StyledImg, StyledH3 } from "./styles";
 
 export default function AboutUs() {
   return (
