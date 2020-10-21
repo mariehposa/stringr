@@ -4,7 +4,7 @@ import archive from '../img/archive.png';
 import preview from '../img/preview.png';
 import download from '../img/download.png';
 import Card from './card';
-import { StyledAll } from './styles';
+import { StyledAll, StyledH1, StyledOverall } from './styles';
 
 export default function HowItWorks() {
     const data = [
@@ -15,10 +15,13 @@ export default function HowItWorks() {
     ]
 
     return (
-        <StyledAll>
-            {
-                data.map(datum => <Card key={datum.id} data={datum} />)
-            }
-        </StyledAll>
+        <StyledOverall>
+            <StyledH1>How it works</StyledH1>
+            <StyledAll>
+                {
+                    data.map(datum => <Card key={datum.id} data={datum} />)
+                }
+            </StyledAll>
+        </StyledOverall>
     )
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import { StyledDiv, StyledH, StyledImg, StyledP } from "./styles";
+import { StyledDiv, StyledH3, StyledImg, StyledP } from "./styles";
 
 export default function Card({data}) {
   return (
       <StyledDiv>
         <StyledImg src= {data.img} alt="how stringr works"/>
-        <StyledH>{data.title}</StyledH>
+        <StyledH3>{data.title}</StyledH3>
         <StyledP>Status: {data.subtitle}</StyledP>
       </StyledDiv>
     );
