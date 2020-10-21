@@ -10,6 +10,7 @@ export const StyledAll = styled.div`
 
 export const StyledDiv = styled.div`
     width: 40%;
+    
     > div {
         display: flex;
         flex-wrap: wrap;
