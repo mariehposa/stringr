@@ -14,7 +14,9 @@ export default function HowItWorks() {
 
     return (
         <div>
-
+            {
+                data.map(datum => <div key={datum.id} data={data} />)
+            }
         </div>
     )
 }
