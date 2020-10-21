@@ -36,7 +36,7 @@ export default function Navigation() {
             </div>
             <div>
                 <StyledLink2 to="/videographers"> Videographers </StyledLink2>
-                <StyledLink2 to="/login"> Login </StyledLink2>
+                <StyledLink2 to="/login"> Log in </StyledLink2>
             </div>
         </StyledDiv>
     </StyledNav>

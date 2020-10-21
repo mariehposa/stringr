@@ -20,7 +20,7 @@ export default function Header() {
                 className='react-player'
                 url='https://static.stringr.com/media/heros/hero-19v2.1.mp4'
                 width="100%"
-                height="100vh"
+                height="100%"
                 muted='true'
                 playing="true"
                 loop="true"

@@ -6,7 +6,7 @@ export const StyledDiv = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    top: 40%;
+    top: 45%;
     bottom: 1%;
 `;
 
