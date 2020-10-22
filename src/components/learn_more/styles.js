@@ -9,20 +9,39 @@ export const StyledAll = styled.div`
     border-top: 1px solid #ccc;
     margin: 0 150px;
     font-family: "Open Sans",Arial,sans-serif;
+
+    @media (max-width: 500px)  {
+        flex-direction: column;
+        margin: 0 30px;
+        padding: 50px 0;
+    }
 `
 
 export const StyledDiv = styled.div`
     width: 45%;
+
+    @media (max-width: 500px)  {
+        width: 100%;
+    }
 `
 
 export const InnerDiv = styled.div`
     display: flex;
     margin-bottom: 20px;
+
+    @media (max-width: 500px)  {
+        flex-direction: column;
+    }
 `
 
 export const StyledLabel = styled.label`
     font-weight: 500;
     width: 20%;
+
+    @media (max-width: 500px)  {
+        width: 20%;
+        margin-bottom: 10px;
+    }
 `
 
 export const StyledSpan = styled.span`
@@ -46,6 +65,10 @@ export const StyledField = styled(Field)`
     &:active {
         border: 1px solid #666;
     }
+
+    @media (max-width: 500px)  {
+        margin-left: 0;
+    }
 `
 
 export const StyledButton = styled.button`
@@ -64,6 +87,10 @@ export const StyledButton = styled.button`
     &:hover {
         background-color: #ef4a34;
         transition: background-color .3s ease;
+    }
+
+    @media (max-width: 500px)  {
+        float: left;
     }
 `
 
