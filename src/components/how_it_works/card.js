@@ -6,7 +6,7 @@ export default function Card({data}) {
       <StyledDiv>
         <StyledImg src= {data.img} alt="how stringr works"/>
         <StyledH3>{data.title}</StyledH3>
-        <StyledP>Status: {data.subtitle}</StyledP>
+        <StyledP>{data.subtitle}</StyledP>
       </StyledDiv>
     );
 }

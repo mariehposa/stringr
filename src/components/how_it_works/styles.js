@@ -6,16 +6,30 @@ export const StyledOverall = styled.div`
     border-top: 1px solid #ccc;
     margin: 0 150px;
     font-family: "Open Sans",Arial,sans-serif;
+
+    @media (max-width: 500px)  {
+        padding: 50px 0;
+        margin: 0 30px;
+    }
 `;
 
 export const StyledAll = styled.div`
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 500px)  {
+        flex-wrap: wrap;
+    }
 `;
 
 export const StyledDiv = styled.div`
     width: 23%;
     text-align: center;
+
+    @media (max-width: 500px)  {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 `;
 
 export const StyledH1 = styled.h1`
@@ -25,6 +39,11 @@ export const StyledH1 = styled.h1`
     color: #000;
     text-transform: uppercase;
     margin-bottom: 50px;
+
+    @media (max-width: 500px)  {
+        font-size: 2rem;
+        text-align: center;
+    }
 `;
 
 export const StyledH3 = styled.h3`

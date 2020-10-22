@@ -8,7 +8,7 @@ export const StyledAll = styled.div`
     font-family: "Open Sans",Arial,sans-serif;
 
     @media (max-width: 500px)  {
-        margin: 50px 50px;
+        margin: 50px 30px;
         flex-direction: column;
     }
 `;
@@ -28,7 +28,7 @@ export const StyledH = styled.h1`
 
     @media (max-width: 500px)  {
         font-size: 2rem;
-        padding: 0 100px;
+        padding: 0 70px;
         text-align: center;
     }
 `;
