@@ -8,6 +8,10 @@ export const StyledAll = styled.div`
     padding-top: 50px;
     justify-content: space-between;
     font-family: "Open Sans",Arial,sans-serif;
+
+    @media (max-width: 500px)  {
+        display: none;
+    }
 `;
 
 export const StyledDiv = styled.div`
