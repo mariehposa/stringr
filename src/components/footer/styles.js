@@ -6,6 +6,10 @@ export const StyledAll = styled.div`
     background-color: #050505;
     padding: 100px 0;
     font-family: "Open Sans",Arial,sans-serif;
+
+    @media (max-width: 500px)  {
+        background-color: #222;
+    }
 `
 
 export const StyledDiv = styled.div`
@@ -16,6 +20,16 @@ export const StyledDiv = styled.div`
     color: #777;
     text-transform: uppercase;
     margin: auto;
+
+    @media (max-width: 500px)  {
+        padding: 0 20px;
+        background-color: unset;
+        width: unset;
+
+        p {
+            background-color: #fff !important;
+        }
+    }
 `
 
 export const StyledNav = styled(NavLink)`
