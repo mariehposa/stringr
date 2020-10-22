@@ -17,17 +17,17 @@ const validateValue = (formValue) => {
     const error = {};
 
     if (!formValue.name) {
-        error.name = 'name is required!';
+        error.name = 'This is a required field!';
     }
 
     if (!formValue.email) {
-        error.email = 'email is required!'
+        error.email = 'This is a required field!'
     }
 }
 
 const validation = yup.object().shape({
-    name: yup.string().required('input correct name!'),
-    email: yup.string().required('input correct email!'),
+    name: yup.string().required('This is a required field!'),
+    email: yup.string().required('This is a required field!'),
 })
 
 export default function LearnMore() {
@@ -66,22 +66,25 @@ export default function LearnMore() {
                                         <StyledSpan>*</StyledSpan>
                                     </StyledLabel>
                                     <StyledField name="name" type="text" />
-                                    <StyledError name="name" component="p" />
                                 </InnerDiv>
+                                <StyledError name="name" component="p" />
+
                                 <InnerDiv>
                                     <StyledLabel>
                                         Company
                                     </StyledLabel>
                                     <StyledField name="company" type="text" />
                                 </InnerDiv>
+
                                 <InnerDiv>
                                     <StyledLabel>
                                         Email
                                         <StyledSpan>*</StyledSpan>
                                     </StyledLabel>
-                                    <StyledField tname="email" type="email" />
-                                    <StyledError name="email" component="p" />
+                                    <StyledField name="email" type="email" />
                                 </InnerDiv>
+                                <StyledError name="email" component="p" />
+
                                 <StyledButton type="submit">Submit Request</StyledButton>
                             </Form>
                         )
