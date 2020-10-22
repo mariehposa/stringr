@@ -5,6 +5,14 @@ import { Formik, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import axios from 'axios';
 
+const url = ''
+
+const initialValue = {
+    name: '',
+    company: '',
+    email: ''
+}
+
 export default function LearnMore() {
 
     return (
