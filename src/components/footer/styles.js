@@ -12,7 +12,7 @@ export const StyledDiv = styled.div`
     border-right: 1px solid #777;
     background: #fff;
     font-size: 18px;
-    width: 380px;
+    width: 420px;
     color: #777;
     text-transform: uppercase;
     margin: auto;
