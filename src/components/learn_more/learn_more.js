@@ -52,29 +52,41 @@ export default function LearnMore() {
             <StyledH1>Learn more</StyledH1>
 
             <StyledDiv>
-                <form name="myForm" method="post">
-                    <InnerDiv>
-                        <StyledLabel>
-                            Name
-                            <StyledSpan>*</StyledSpan>
-                        </StyledLabel>
-                        <StyledField type="text" id="fname" name="errMsg" validator={requiredValidator}/>
-                    </InnerDiv>
-                    <InnerDiv>
-                        <StyledLabel>
-                            Company
-                        </StyledLabel>
-                        <StyledField type="text" id="fname" />
-                    </InnerDiv>
-                    <InnerDiv>
-                        <StyledLabel>
-                            Email
-                            <StyledSpan>*</StyledSpan>
-                        </StyledLabel>
-                        <StyledField type="email" id="fname" name="errMsg" validator={requiredValidator} />
-                    </InnerDiv>
-                    <StyledButton type="submit">Submit Request</StyledButton>
-                </form>
+                <Formik 
+                    initialValues={initialValue}
+                    validate={validateValue}
+                    validationSchema={validation}
+                    onSubmit={onSubmitButton}
+                    render={props => {
+                        return (
+                            <Form>
+                                <InnerDiv>
+                                    <StyledLabel>
+                                        Name
+                                        <StyledSpan>*</StyledSpan>
+                                    </StyledLabel>
+                                    <StyledField name="name" type="text" />
+                                    <ErrorMessage name="name" component="p" />
+                                </InnerDiv>
+                                <InnerDiv>
+                                    <StyledLabel>
+                                        Company
+                                    </StyledLabel>
+                                    <StyledField name="company" type="text" />
+                                </InnerDiv>
+                                <InnerDiv>
+                                    <StyledLabel>
+                                        Email
+                                        <StyledSpan>*</StyledSpan>
+                                    </StyledLabel>
+                                    <StyledField tname="email" type="email" />
+                                    <ErrorMessage name="email" component="p" />
+                                </InnerDiv>
+                                <StyledButton type="submit">Submit Request</StyledButton>
+                            </Form>
+                        )
+                    }}
+                />
             </StyledDiv>
         </StyledAll>
     )
