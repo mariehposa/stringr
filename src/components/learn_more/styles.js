@@ -41,8 +41,9 @@ export const StyledField = styled(Field)`
     &:focus {
         border-color: #2d3940;
     }
+
     &:active {
-        border: 1px solid #e80000;
+        border: 1px solid #666;
     }
 `
 
@@ -66,5 +67,7 @@ export const StyledButton = styled.button`
 `
 
 export const StyledError = styled(ErrorMessage)`
-    color: red;
+    color: #e80000;
+    text-align: center;
+    margin-bottom: 20px;
 `
