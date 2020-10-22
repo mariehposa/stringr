@@ -9,6 +9,12 @@ export const StyledDiv = styled.div`
     margin-right: 20px;
     float: right;
     cursor: pointer;
+
+    @media (max-width: 500px)  {
+        width: 50px;
+        margin-top: 40px;
+        margin-right: -15px;
+    }
 `;
 
 export const StyledImg = styled.img`
@@ -19,4 +25,8 @@ export const StyledP = styled.p`
     color: #fff;
     font-weight: 600;
     margin-left: -15px;
+
+    @media (max-width: 500px)  {
+        display: none;
+    }
 `;
