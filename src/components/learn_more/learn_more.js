@@ -14,6 +14,21 @@ const initialValue = {
 }
 
 export default function LearnMore() {
+    const onSubmitButton = ( formValues, action) => {
+
+        axios.post(url, {
+            name: formValues.name,
+            company: formValues.company,
+            email: formValues.email
+        })
+        .then(res => {
+            // console.log(res.data)
+        })
+        .catch(error => {
+            // console.log(error)
+        })
+        action.resetForm()
+    }
 
     return (
         <StyledAll>
