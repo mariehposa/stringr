@@ -7,13 +7,13 @@ export default function Faq() {
         <StyledAll id={"faq"}>
             <StyledDiv>
                 <StyledNav to="/">What is Stringr?</StyledNav>
-                <StyledNav to="/payment_time">I uploaded video to the Stringr platform. When will I get paid? </StyledNav>
-                <StyledNav to="/app_usage">How do I use the Stringr app? </StyledNav>
-                <StyledNav to="/phone_usage">Do I need to use my phone to take video? </StyledNav>
-                <StyledNav to="/payment_way">How much do people typically get paid per video? </StyledNav>
-                <StyledNav to="/form">Will I get a 1099 tax form from Stringr? </StyledNav>
-                <StyledNav to="/customers">Who are Stringr’s customers? </StyledNav>
-                <StyledNav to="/email">I need to change my email. Where do I do that? </StyledNav>
+                <StyledNav to="/faq/payment_time">I uploaded video to the Stringr platform. When will I get paid? </StyledNav>
+                <StyledNav to="/faq/app_usage">How do I use the Stringr app? </StyledNav>
+                <StyledNav to="/faq/phone_usage">Do I need to use my phone to take video? </StyledNav>
+                <StyledNav to="/faq/payment_way">How much do people typically get paid per video? </StyledNav>
+                <StyledNav to="/faq/form">Will I get a 1099 tax form from Stringr? </StyledNav>
+                <StyledNav to="/faq/customers">Who are Stringr’s customers? </StyledNav>
+                <StyledNav to="/faq/email">I need to change my email. Where do I do that? </StyledNav>
             </StyledDiv>
 
             <InnerDiv> 
