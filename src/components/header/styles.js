@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const StyledAll = styled.div`
     margin-top: 90px;
+
+    @media (max-width: 500px)  {
+        margin-top: 105px;
+    }
 `;
 
 export const StyledDiv = styled.div`
@@ -20,17 +24,27 @@ export const StyledH = styled.h1`
     font-weight: 800;
     text-align: center;
     font-size: 3.4rem;
+
+    @media (max-width: 500px)  {
+        font-size: 3rem;
+        line-height: 60px;
+    }
 `;
 
 export const StyledP = styled.p`
     text-align: center;
     color: #fff;
     font-weight: 300;
-    line-height: 1.4;
     font-size: 1.8rem;
     width: 55%;
     margin-top: -10px;
     line-height: 50px;
+
+    @media (max-width: 500px)  {
+        font-size: 1.7rem;
+        width: 65%;
+        line-height: 30px;
+    }
 `;
 
 export const StyledButton = styled.button`
@@ -48,9 +62,17 @@ export const StyledButton = styled.button`
         background-color: #ef4a34;
         transition: background-color .3s ease;
     }
+
+    @media (max-width: 500px)  {
+        margin-top: 20px;
+    }
 `;
 
 export const StyledImg = styled.img`
     width: 60px;
     margin-top: 20px;
+
+    @media (max-width: 500px)  {
+        margin-top: 0;
+    }
 `;
