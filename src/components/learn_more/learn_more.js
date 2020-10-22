@@ -13,6 +13,23 @@ const initialValue = {
     email: ''
 }
 
+const validateValue = (formValue) => {
+    const error = {};
+
+    if (!formValue.name) {
+        error.name = 'name is required!';
+    }
+
+    if (!formValue.email) {
+        error.email = 'email is required!'
+    }
+}
+
+const validation = yup.object().shape({
+    name: yup.string().required('input correct name!'),
+    email: yup.string().required('input correct email!'),
+})
+
 export default function LearnMore() {
     const onSubmitButton = ( formValues, action) => {
 
