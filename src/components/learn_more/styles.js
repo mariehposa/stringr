@@ -8,6 +8,7 @@ export const StyledAll = styled.div`
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     margin: 0 150px;
+    font-family: "Open Sans",Arial,sans-serif;
 `
 
 export const StyledDiv = styled.div`

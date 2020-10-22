@@ -7,6 +7,7 @@ export const StyledNav = styled.div`
     background: #0e0e0e;
     padding: 15px 0;
     box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    font-family: "Open Sans",Arial,sans-serif;
 `;
 
 export const StyledLogo = styled.img`

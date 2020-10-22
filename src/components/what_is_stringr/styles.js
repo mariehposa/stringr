@@ -3,12 +3,13 @@ import { NavLink } from "react-router-dom";
 
 export const StyledAll = styled.div`
     display: flex;
-    justify-content: space-evenly;
-    margin: 200px 0;
+    justify-content: space-between;
+    margin: 200px 150px;
+    font-family: "Open Sans",Arial,sans-serif;
 `;
 
 export const StyledDiv = styled.div`
-    width: 43%;
+    width: 50%;
 `;
 
 export const StyledH = styled.h1`
@@ -34,5 +35,5 @@ export const StyledNav = styled(NavLink)`
 `;
 
 export const StyledImg = styled.img`
-    width: 500px;
+    width: 450px;
 `;

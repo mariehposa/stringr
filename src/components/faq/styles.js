@@ -7,6 +7,7 @@ export const StyledAll = styled.div`
     border-top: 1px solid #ccc;
     padding-top: 50px;
     justify-content: space-between;
+    font-family: "Open Sans",Arial,sans-serif;
 `;
 
 export const StyledDiv = styled.div`

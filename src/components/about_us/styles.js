@@ -6,6 +6,7 @@ export const StyledAll = styled.div`
     background-color: #050505;
     padding: 100px 50px;
     color: #fff;
+    font-family: "Open Sans",Arial,sans-serif;
 `;
 
 export const StyledDiv = styled.div`
