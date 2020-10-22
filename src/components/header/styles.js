@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const StyledAll = styled.div`
+    margin-top: 90px;
+`
+
 export const StyledDiv = styled.div`
     position: absolute;
     display: flex;

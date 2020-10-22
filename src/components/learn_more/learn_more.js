@@ -48,7 +48,7 @@ export default function LearnMore() {
     }
 
     return (
-        <StyledAll>
+        <StyledAll id={"Learn_more"}>
             <StyledH1>Learn more</StyledH1>
 
             <StyledDiv>

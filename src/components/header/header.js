@@ -3,11 +3,11 @@ import ReactPlayer from 'react-player';
 import '../../App.css';
 import downArrow from '../img/down-arrow.svg';
 import { NavLink } from "react-router-dom";
-import {StyledDiv, StyledH, StyledP, StyledButton, StyledImg} from './styles';
+import {StyledDiv, StyledH, StyledP, StyledButton, StyledImg, StyledAll} from './styles';
 
 export default function Header() {
     return (
-        <div>
+        <StyledAll>
             <StyledDiv>
                 <StyledH>Video of anything. anywhere.</StyledH>
                 <StyledP> Stringr has a network of over 125,000 videographers to get you the footage you want, when you need it.</StyledP>
@@ -25,6 +25,6 @@ export default function Header() {
                 playing="true"
                 loop="true"
             />
-        </div>
+        </StyledAll>
     )
 }

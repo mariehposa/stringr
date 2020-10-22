@@ -4,7 +4,7 @@ export const StyledAll = styled.div`
     display: flex;
     justify-content: space-evenly;
     background-color: #050505;
-    padding: 100px 50px;
+    padding: 100px 80px;
     color: #fff;
     font-family: "Open Sans",Arial,sans-serif;
 `;

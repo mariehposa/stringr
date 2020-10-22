@@ -4,10 +4,14 @@ import { NavLink } from "react-router-dom";
 export const StyledNav = styled.div`
     display: flex;
     justify-content: space-around;
-    background: #0e0e0e;
+    background: rgba(0,0,0,.8);
     padding: 15px 0;
     box-shadow: 0 1px 1px rgba(0,0,0,.3);
     font-family: "Open Sans",Arial,sans-serif;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
 `;
 
 export const StyledLogo = styled.img`
@@ -31,6 +35,10 @@ export const StyledLink1 = styled(NavLink)`
         opacity: 0.7;
         transition: all 0.5s ease-in-out;
     }
+
+    &:active {
+        border: none;
+    }
 `;
 
 export const StyledLink2 = styled(NavLink)`
@@ -47,6 +55,10 @@ export const StyledLink2 = styled(NavLink)`
     &:hover {
         opacity: 0.7;
         transition: all 0.5s ease-in-out;
+    }
+
+    &:active {
+        border: none;
     }
 `;
 
