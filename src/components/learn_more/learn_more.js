@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyledAll, StyledDiv, InnerDiv, StyledLabel, StyledSpan, StyledField, StyledButton } from './styles';
 import { StyledH1 } from "../how_it_works/styles";
+import { Formik, ErrorMessage } from 'formik';
+import * as yup from 'yup';
+import axios from 'axios';
 
 export default function LearnMore() {
 
