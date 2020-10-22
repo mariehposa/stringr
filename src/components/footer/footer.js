@@ -3,6 +3,7 @@ import { StyledAll, StyledDiv, StyledNav, StyledA, StyledDiv1 } from './styles';
 import facebook from '../img/facebook.png';
 import twitter from '../img/twitter.png';
 import TopScroll from '../top_scroll/top_scroll';
+import Help from '../help/help';
 
 export default function Footer() {
     return (
@@ -27,6 +28,7 @@ export default function Footer() {
                 </StyledA>
             </div>
             <TopScroll />
+            <Help />
         </StyledAll>
     )
 }
