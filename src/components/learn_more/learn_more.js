@@ -1,34 +1,37 @@
 import React from 'react';
-import { InnerDiv, StyledForm, StyledLabel, StyledSpan, StyledField, StyledButton } from './styles';
-import { StyledAll, StyledDiv, StyledH1 } from "../how_it_works/styles";
+import { StyledAll, StyledDiv, InnerDiv, StyledLabel, StyledSpan, StyledField, StyledButton } from './styles';
+import { StyledH1 } from "../how_it_works/styles";
 
 export default function LearnMore() {
+
     return (
         <StyledAll>
             <StyledH1>Learn more</StyledH1>
 
             <StyledDiv>
-                <StyledForm>
+                <form name="myForm" method="post">
                     <InnerDiv>
                         <StyledLabel>
+                            Name
                             <StyledSpan>*</StyledSpan>
                         </StyledLabel>
-                        <StyledField>Name</StyledField>
+                        <StyledField type="text" id="fname" name="errMsg" validator={requiredValidator}/>
                     </InnerDiv>
                     <InnerDiv>
                         <StyledLabel>
-                            <StyledSpan>*</StyledSpan>
+                            Company
                         </StyledLabel>
-                        <StyledField>Company</StyledField>
+                        <StyledField type="text" id="fname" />
                     </InnerDiv>
                     <InnerDiv>
                         <StyledLabel>
+                            Email
                             <StyledSpan>*</StyledSpan>
                         </StyledLabel>
-                        <StyledField>Email</StyledField>
+                        <StyledField type="email" id="fname" name="errMsg" validator={requiredValidator} />
                     </InnerDiv>
-                    <StyledButton>Submit Request</StyledButton>
-                </StyledForm>
+                    <StyledButton type="submit">Submit Request</StyledButton>
+                </form>
             </StyledDiv>
         </StyledAll>
     )
