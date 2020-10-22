@@ -1,11 +1,11 @@
 import React from 'react';
-import { InnerDiv } from '../faq/styles';
-import { StyledAll, StyledDiv, InnerDiv, StyledForm, StyledLabel, StyledSpan, StyledField } from './styles';
+import { InnerDiv, StyledForm, StyledLabel, StyledSpan, StyledField, StyledButton } from './styles';
+import { StyledAll, StyledDiv, StyledH1 } from "../how_it_works/styles";
 
 export default function LearnMore() {
     return (
         <StyledAll>
-            <StyledP>Learn more</StyledP>
+            <StyledH1>Learn more</StyledH1>
 
             <StyledDiv>
                 <StyledForm>
@@ -27,6 +27,7 @@ export default function LearnMore() {
                         </StyledLabel>
                         <StyledField>Email</StyledField>
                     </InnerDiv>
+                    <StyledButton>Submit Request</StyledButton>
                 </StyledForm>
             </StyledDiv>
         </StyledAll>
