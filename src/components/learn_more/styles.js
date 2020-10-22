@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ErrorMessage, Field } from 'formik';
 
 export const StyledAll = styled.div`
     display: flex;
@@ -29,7 +30,7 @@ export const StyledSpan = styled.span`
     margin-left: 3px;
 `
 
-export const StyledField = styled.input`
+export const StyledField = styled(Field)`
     width: 100%;
     margin-left: 10px;
     border: 1px solid #dadada;
@@ -62,4 +63,8 @@ export const StyledButton = styled.button`
         background-color: #ef4a34;
         transition: background-color .3s ease;
     }
+`
+
+export const StyledError = styled(ErrorMessage)`
+    color: red;
 `

@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyledAll, StyledDiv, InnerDiv, StyledLabel, StyledSpan, StyledField, StyledButton } from './styles';
-import { StyledH1 } from "../how_it_works/styles";
-import { Formik, ErrorMessage } from 'formik';
+import { Formik, Form } from 'formik';
 import * as yup from 'yup';
 import axios from 'axios';
+import { StyledH1 } from "../how_it_works/styles";
+import { StyledAll, StyledDiv, InnerDiv, StyledLabel, StyledSpan, StyledField, StyledButton,StyledError } from './styles';
 
 const url = ''
 
@@ -66,7 +66,7 @@ export default function LearnMore() {
                                         <StyledSpan>*</StyledSpan>
                                     </StyledLabel>
                                     <StyledField name="name" type="text" />
-                                    <ErrorMessage name="name" component="p" />
+                                    <StyledError name="name" component="p" />
                                 </InnerDiv>
                                 <InnerDiv>
                                     <StyledLabel>
@@ -80,7 +80,7 @@ export default function LearnMore() {
                                         <StyledSpan>*</StyledSpan>
                                     </StyledLabel>
                                     <StyledField tname="email" type="email" />
-                                    <ErrorMessage name="email" component="p" />
+                                    <StyledError name="email" component="p" />
                                 </InnerDiv>
                                 <StyledButton type="submit">Submit Request</StyledButton>
                             </Form>
