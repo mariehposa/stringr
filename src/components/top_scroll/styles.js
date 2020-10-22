@@ -9,6 +9,10 @@ export const StyledDiv = styled.div`
     margin-right: 10px;
     cursor: pointer;
     margin-top: -100px;
+
+    @media (max-width: 500px)  {
+        margin-top: -50px;
+    }
 `;
 
 export const StyledImg = styled.img`
