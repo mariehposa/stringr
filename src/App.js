@@ -6,6 +6,7 @@ import HowItWorks from './components/how_it_works/how_it_works';
 import AboutUs from './components/about_us/about_us';
 import Faq from './components/faq/faq';
 import Footer from './components/footer/footer';
+import LearnMore from './components/learn_more/learn_more';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <WhatIsStringr />
       <HowItWorks />
+      <LearnMore />
       <AboutUs />
       <Faq />
       <Footer />
