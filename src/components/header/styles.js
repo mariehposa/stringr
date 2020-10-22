@@ -51,6 +51,6 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledImg = styled.img`
-    width: 20px;
+    width: 60px;
     margin-top: 20px;
 `;

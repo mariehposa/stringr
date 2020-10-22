@@ -1,5 +1,5 @@
 import React from 'react';
-import help from '../img/up-arrow.svg'
+import help from '../img/help.svg'
 import { StyledDiv, StyledP, StyledImg } from './styles';
 
 export default function Help() {

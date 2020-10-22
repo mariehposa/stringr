@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import stringr from '../img/stringr.svg';
 import {StyledNav, StyledLink1, StyledLink2, StyledLogo, StyledDiv} from './styles';
 
@@ -14,7 +15,9 @@ export default function Navigation() {
   return (
     <StyledNav>
         <div>
-            <StyledLogo src={stringr} alt="stringr" />
+            <NavLink to="/">
+                <StyledLogo src={stringr} alt="stringr" />
+            </NavLink>
         </div>
         <StyledDiv>
             <div>

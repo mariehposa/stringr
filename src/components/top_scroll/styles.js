@@ -4,13 +4,15 @@ export const StyledDiv = styled.div`
     width: 50px;
     background-color: #bf3434;
     border-radius: 100%;
-    height: 15vh;
+    height: 7vh;
     float: right;
     margin-right: 10px;
     cursor: pointer;
+    margin-top: -100px;
 `;
 
 export const StyledImg = styled.img`
-    width: 25px;
-    margin-top: 7px;
+    width: 60px;
+    margin-top: -5px;
+    margin-left: -5px;  
 `;
