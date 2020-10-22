@@ -6,7 +6,7 @@ export default function WhatIsStringr() {
   return (
     <StyledAll id={"what_is_stringr"}>
       <StyledDiv>
-        <StyledH>What is stringr</StyledH>
+        <StyledH>What is stringr?</StyledH>
         <StyledP>
           Stringr is a video platform that allows customers to source, edit,
           publish and monetize video. Stringr has more than 100,000
