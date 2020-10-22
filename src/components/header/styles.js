@@ -1,10 +1,13 @@
 import styled from "styled-components";
+import header from '../img/header.jpg';
 
 export const StyledAll = styled.div`
     margin-top: 90px;
 
     @media (max-width: 500px)  {
-        margin-top: 105px;
+        margin-top: 125px;
+        position: absolute;
+        /* background-image: url(${header}) */
     }
 `;
 
@@ -16,6 +19,12 @@ export const StyledDiv = styled.div`
     align-items: center;
     top: 45%;
     bottom: 1%;
+
+    @media (max-width: 500px)  {
+        /* margin-top: 105px; */
+        background-image: url(${header});
+        position: unset;
+    }
 `;
 
 export const StyledH = styled.h1`
