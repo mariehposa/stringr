@@ -5,9 +5,8 @@ export const StyledAll = styled.div`
     margin-top: 90px;
 
     @media (max-width: 500px)  {
-        margin-top: 125px;
-        position: absolute;
-        /* background-image: url(${header}) */
+        margin-top: 90px;
+        position: unset;
     }
 `;
 
@@ -21,7 +20,6 @@ export const StyledDiv = styled.div`
     bottom: 1%;
 
     @media (max-width: 500px)  {
-        /* margin-top: 105px; */
         background-image: url(${header});
         position: unset;
     }

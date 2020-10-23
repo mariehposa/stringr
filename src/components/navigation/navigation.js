@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import stringr from '../img/stringr.svg';
-import {StyledNav, StyledLink1, StyledLink2, StyledLogo, StyledDiv} from './styles';
+import {StyledNav, StyledLink1, StyledLink2, StyledLogo, StyledDiv } from './styles';
 import { slide as Menu } from 'react-burger-menu';
 import '../../App.css';
 
@@ -57,6 +57,7 @@ export const BurgerMenu = (props) => {
         behavior: "smooth"
       });
     }
+    
     return (
       <Menu {...props} width = { '70%' } right>
         <StyledLink1 onClick={() => navigate("what_is_stringr")} to="/what_is_stringr">
@@ -73,7 +74,13 @@ export const BurgerMenu = (props) => {
         </StyledLink1>
         <StyledLink1 onClick={() => navigate("faq")} to="/faq">
             Faq
-        </StyledLink1>
+        </StyledLink1>   
+        <StyledLink2 to="/videographers"> 
+            Videographers 
+        </StyledLink2>
+        <StyledLink2 to="/login"> 
+            Log in 
+        </StyledLink2>       
       </Menu>
     );
   }

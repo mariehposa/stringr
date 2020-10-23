@@ -12,15 +12,27 @@ export const StyledNav = styled.div`
     z-index: 1;
     width: 100%;
     top: 0;
+
+    @media (max-width: 500px)  {
+        justify-content: space-between;
+    }
 `;
 
 export const StyledLogo = styled.img`
     width: 80px;
+
+    @media (max-width: 500px)  {
+        margin-left: 20px;
+    }
 `;
 
 export const StyledDiv = styled.div`
     display: flex;
     margin-top: 30px;
+
+    @media (max-width: 500px)  {
+        display: none;
+    }
 `;
 
 export const StyledLink1 = styled(NavLink)`
@@ -60,5 +72,9 @@ export const StyledLink2 = styled(NavLink)`
     &:active {
         border: none;
     }
-`;
 
+    @media (max-width: 500px)  {
+        border: none;
+        padding-left: 0;
+    }
+`;
