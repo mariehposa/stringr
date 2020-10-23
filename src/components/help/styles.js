@@ -19,6 +19,10 @@ export const StyledDiv = styled.div`
 
 export const StyledImg = styled.img`
     width: 60px;
+
+    @media (max-width: 500px)  {
+        margin-left: -4px;
+    }
 `;
 
 export const StyledP = styled.p`

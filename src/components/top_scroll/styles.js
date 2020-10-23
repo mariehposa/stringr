@@ -11,8 +11,9 @@ export const StyledDiv = styled.div`
     margin-top: -100px;
 
     @media (max-width: 500px)  {
+        width: 45px;
         margin-top: -50px;
-        height: 6.3vh;
+        height: 6vh;
     }
 `;
 
@@ -22,6 +23,7 @@ export const StyledImg = styled.img`
     margin-left: -5px;
 
     @media (max-width: 500px)  {
-        margin-top: -7px;
+        margin-top: -9px;
+        margin-left: -8px;
     }
 `;
