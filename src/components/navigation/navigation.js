@@ -46,3 +46,39 @@ export default function Navigation() {
     </StyledNav>
   );
 }
+
+export const BurgerMenu = (props) => {
+    const [darkMode, setDarkMode] = DarkMode(false);
+    const toggleMode = e => {
+      e.preventDefault();
+      setDarkMode(!darkMode);
+    };
+  
+    function navigate(elementId) {
+      props.setMenuOpen(false)
+      let offsetTop = document.getElementById(elementId).offsetTop;
+      window.scrollTo({
+        top: offsetTop - 100,
+        behavior: "smooth"
+      });
+    }
+    return (
+      <Menu {...props} width = { '70%' } right>
+        <StyledLink1 onClick={() => navigate("what_is_stringr")} to="/what_is_stringr">
+            what is stringr?
+        </StyledLink1>
+        <StyledLink1 onClick={() => navigate("how_it_works")} to="how_it_works">
+            How it works
+        </StyledLink1>
+        <StyledLink1 onClick={() => navigate("Learn_more")} to="/Learn_more">
+            Learn more
+        </StyledLink1>
+        <StyledLink1 onClick={() => navigate("about_us")} to="/about_us">
+            About us
+        </StyledLink1>
+        <StyledLink1 onClick={() => navigate("faq")} to="/faq">
+            Faq
+        </StyledLink1>
+      </Menu>
+    );
+  }
