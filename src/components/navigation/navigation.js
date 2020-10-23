@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import stringr from '../img/stringr.svg';
 import {StyledNav, StyledLink1, StyledLink2, StyledLogo, StyledDiv} from './styles';
 import { slide as Menu } from 'react-burger-menu';
+import '../../App.css';
 
 export default function Navigation() {
     function navigate(elementId) {
@@ -48,12 +49,6 @@ export default function Navigation() {
 }
 
 export const BurgerMenu = (props) => {
-    const [darkMode, setDarkMode] = DarkMode(false);
-    const toggleMode = e => {
-      e.preventDefault();
-      setDarkMode(!darkMode);
-    };
-  
     function navigate(elementId) {
       props.setMenuOpen(false)
       let offsetTop = document.getElementById(elementId).offsetTop;
