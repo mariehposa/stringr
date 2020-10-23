@@ -12,11 +12,16 @@ export const StyledDiv = styled.div`
 
     @media (max-width: 500px)  {
         margin-top: -50px;
+        height: 6.3vh;
     }
 `;
 
 export const StyledImg = styled.img`
     width: 60px;
     margin-top: -5px;
-    margin-left: -5px;  
+    margin-left: -5px;
+
+    @media (max-width: 500px)  {
+        margin-top: -7px;
+    }
 `;

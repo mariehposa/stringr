@@ -13,7 +13,7 @@ export const StyledDiv = styled.div`
     @media (max-width: 500px)  {
         width: 50px;
         margin-top: 40px;
-        margin-right: -15px;
+        margin-right: 0px;
     }
 `;
 
